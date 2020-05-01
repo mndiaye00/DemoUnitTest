@@ -23,5 +23,15 @@ namespace QuickApp.Test
 
             Assert.Contains(" ", fullName);
         }
+
+        [Fact]
+        public void ShouldJoinName_StartWith()
+        {
+            var sut = new NameJoiner();
+
+            var fullName = sut.Join("Moussa", "Ndiaye");
+
+            Assert.StartsWith("Mou", fullName);
+        }
     }
 }
