@@ -27,11 +27,17 @@ namespace QuickApp
             CreateStartingWeapons();
         }
 
-        private void CreateStartingWeapons()
+        public void CreateStartingWeapons()
         {
+            Weapons = new List<string>()
+            {
+                "Lil-J",
+                "Bob",
+                "Foo"
+            }; 
         }
 
-        private string GenerateName()
+        public string GenerateName()
         {
             var names = new[]
             {

@@ -36,5 +36,13 @@ namespace QuickApp.Test
 
             Assert.True(result);
         }
+
+        [Fact]
+        private void ShouldNotContainFooBar()
+        {
+            var sut = new PlayerCharacter();
+
+            Assert.Contains("Bob", sut.Weapons);
+        }
     }
 }
