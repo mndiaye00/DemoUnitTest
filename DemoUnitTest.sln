@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickApp", "QuickApp\QuickApp.csproj", "{A879135F-3BB9-4A12-868A-B666EF7C018F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickApp.Test", "QuickApp.Test\QuickApp.Test.csproj", "{DF905EF0-78F6-45A2-8135-6C29B18ABCEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A879135F-3BB9-4A12-868A-B666EF7C018F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A879135F-3BB9-4A12-868A-B666EF7C018F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A879135F-3BB9-4A12-868A-B666EF7C018F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A879135F-3BB9-4A12-868A-B666EF7C018F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF905EF0-78F6-45A2-8135-6C29B18ABCEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF905EF0-78F6-45A2-8135-6C29B18ABCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF905EF0-78F6-45A2-8135-6C29B18ABCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF905EF0-78F6-45A2-8135-6C29B18ABCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C7C18AA-B3C0-4731-9371-ECC3F150C346}
+	EndGlobalSection
+EndGlobal
