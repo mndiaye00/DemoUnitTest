@@ -39,6 +39,8 @@
     <Compile Include="CreditCardApplication.cs" />
     <Compile Include="CreditCardApplicationDecision.cs" />
     <Compile Include="CreditCardApplicationEvaluator.cs" />
+    <Compile Include="FrequentFlyerNumberValidatorService.cs" />
+    <Compile Include="IFrequentFlyerNumberValidator.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

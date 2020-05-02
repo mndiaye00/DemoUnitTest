@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CreditCardApplication
 {
-    public interface IFrequentFluentNumberValidator
+    public interface IFrequentFlyerNumberValidator
     {
         bool IsValid(string frequentFluentNumber);
 
