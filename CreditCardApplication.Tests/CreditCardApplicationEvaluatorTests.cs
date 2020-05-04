@@ -38,5 +38,29 @@ namespace CreditCardApplication.Tests
             // Assert
             Assert.Equal(CreditCardApplicationDecision.ReferedToHuman, decision);
         }
+
+        [Fact]
+        public void DeclineLowIncomeApplication()
+        {
+            // Arrange
+            Mock<IFrequentFlyerNumberValidator> mockValidator = new Mock<IFrequentFlyerNumberValidator>();
+
+            mockValidator.Setup(x => x.IsValid("x")).Returns(true);
+
+            var sut = new CreditCardApplicationEvaluator(mockValidator.Object);
+
+            var application = new CreditCardApplication()
+            {
+                GrossAnnualIncome = 19_999,
+                Age = 42,
+                FrequentFlyerNumber = "x"
+            };
+
+            // Act
+            CreditCardApplicationDecision decision = sut.Evaluate(application);
+
+            // Assert
+            Assert.Equal(CreditCardApplicationDecision.AutoDeclined, decision);
+        }
     }
 }
