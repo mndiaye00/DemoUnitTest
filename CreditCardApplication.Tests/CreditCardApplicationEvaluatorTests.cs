@@ -3,7 +3,7 @@ using Moq;
 
 namespace CreditCardApplication.Tests
 {
-    public class CreditCardApplicationEvaluatorShould
+    public class CreditCardApplicationEvaluatorTests
     {
         [Fact]
         public void AcceptedHighIncomeApplication()
